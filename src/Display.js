@@ -1,16 +1,17 @@
 import React from 'react'
-
+import Modalrice from './componets/Modal'
 const Display = (props) =>{
 const {rices} = props
 const loaded = () => (
     <div style = {{textAlign: 'center'}} className = 'rice'>
     {rices.map((rice, index) => (
         <article key = {index}>
-            <h1>{rice.name}</h1>
+            {/* <h1>{rice.name}</h1>
             <h3>{rice.type}</h3>
             <p>{rice.description}</p>
             <img src = {rice.img}/>
-            <p>{rice.uses}</p>
+            <p>uses: {rice.uses}</p> */}
+            <Modalrice rice = {rice}/>
             <button onClick = {() => {
                 props.selectRice(rice)
                 props.history.push('/edit')

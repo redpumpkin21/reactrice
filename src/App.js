@@ -68,7 +68,7 @@ const selectRice = (rice) => {
       <h1>Rice</h1>
       <hr />
       <Link to="/create">
-        <button>Add Rice</button>
+        <button className = 'add'>Add Rice</button>
         </Link>
       
         <main>
