@@ -65,10 +65,10 @@ const selectRice = (rice) => {
   
   return (
     <div className="App">
-      <h1>Rice</h1>
+      <h1>Types of Rice!</h1>
       <hr />
       <Link to="/create">
-        <button className = 'add'>Add Rice</button>
+        <button className = 'add'>Add a Rice</button>
         </Link>
       
         <main>

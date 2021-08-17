@@ -18,8 +18,20 @@ h1{
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
+  
 
 }
 .rice p{
   width: 237px;
+}
+
+.cover{
+  width: 100%;
+  height: 100%;
+}
+
+#riceb{
+  padding: 0;
+  color: black;
+  background-color: black;
 }

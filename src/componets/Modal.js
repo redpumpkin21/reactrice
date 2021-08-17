@@ -13,7 +13,7 @@ const Modalrice = (props) => {
 
   return (
     <div>
-      <Button color="danger" onClick={toggle}>
+      <Button  onClick={toggle} id = 'riceb'>
       <img  className = 'cover'src ={props.rice.img} /> </Button>
       <Modal isOpen={modal} toggle={toggle} className='ricey'>
         <ModalHeader toggle={toggle}>{props.rice.name}
