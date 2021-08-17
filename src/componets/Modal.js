@@ -19,6 +19,8 @@ const Modalrice = (props) => {
         <ModalHeader toggle={toggle}>{props.rice.name}
         </ModalHeader>
         <ModalBody className = 'riceonrice'>
+        Type of Grain: {props.rice.type}
+        <br/>
           Desciption: {props.rice.description} 
           <br />
           Uses: {props.rice.uses}
