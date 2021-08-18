@@ -3,6 +3,7 @@ import { Route, Link, Switch } from "react-router-dom";
 import './App.css';
 import Display from "./Display";
 import Form from "./Form";
+import { CgBowl} from "react-icons/cg";
 
 function App() {
   const url ="https://rice-api-628.herokuapp.com"
@@ -65,10 +66,10 @@ const selectRice = (rice) => {
   
   return (
     <div className="App">
-      <h1>Types of Rice!</h1>
-      <hr />
+      <h1> <CgBowl />Types of Rice!</h1>
+      {/* <hr /> */}
       <Link to="/create">
-        <button className = 'add'>Add a Rice</button>
+        <button className = 'add'>ADD ANOTHER TYPE</button>
         </Link>
       
         <main>

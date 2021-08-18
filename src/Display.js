@@ -1,5 +1,7 @@
 import React from 'react'
 import Modalrice from './componets/Modal'
+import { FaUtensilSpoon, FaTrashAlt} from "react-icons/fa";
+
 const Display = (props) =>{
 const {rices} = props
 const loaded = () => (
@@ -12,13 +14,13 @@ const loaded = () => (
             <img src = {rice.img}/>
             <p>uses: {rice.uses}</p> */}
             <Modalrice rice = {rice}/>
-            <button onClick = {() => {
+            <button className = 'edit' onClick = {() => {
                 props.selectRice(rice)
                 props.history.push('/edit')
-            }}>Edit</button>
-            <button onClick = {() => {
+            }}><FaUtensilSpoon />Edit</button>
+            <button className = 'delete' onClick = {() => {
                 props.deleteRice(rice)
-            }}>Delete</button>
+            }}><FaTrashAlt /></button>
         </article>
     ))}
     </div>
